@@ -61,7 +61,7 @@ int main()
     
     // const object test
     cout << "\nConst object test\n";
-    const Stack<int> f; // if this compiles, DynamicArray::DynamicArray main constructor exists
+    const Stack<int> f; // if this compiles, Stack::Stack main constructor exists
     
     
     cout << "\n---TEST STRING STACK---\n";
@@ -107,7 +107,7 @@ int main()
     
     // const object test
     cout << "\nConst object test\n";
-    const Stack<string> l; // if this compiles, DynamicArray::DynamicArray main constructor exists
+    const Stack<string> l; // if this compiles, Stack::Stack main constructor exists
     
     cout << "\n---TEST DOUBLE STACK---\n";
     // Checking template array of integers
@@ -152,7 +152,7 @@ int main()
     
     // const object test
     cout << "\nConst object test\n";
-    const Stack<double> s; // if this compiles, DynamicArray::DynamicArray main constructor exists
+    const Stack<double> s; // if this compiles, Stack::Stack main constructor exists
     
     cout << "\n---TEST CHAR STACK---\n";
     // Checking template array of integers
@@ -197,7 +197,7 @@ int main()
     
     // const object test
     cout << "\nConst object test\n";
-    const Stack<char> z; // if this compiles, DynamicArray::DynamicArray main constructor exists
+    const Stack<char> z; // if this compiles, Stack::Stack main constructor exists
     
 }
 
