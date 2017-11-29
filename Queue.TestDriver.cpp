@@ -21,7 +21,7 @@ int main()
     // Checking template queue of integers
     Queue<int> a;
     
-    // Array constructor
+    // Queue constructor
     cout << "\nTesting Queue::Queue\n";
     assert(a.front() == 0); // default value is 0
     assert(a.back() == 0);
@@ -80,7 +80,7 @@ int main()
     // Checking template queue of strings
     Queue<string> g;
     
-    // Array constructor
+    // Queue constructor
     cout << "\nTesting Queue::Queue\n";
     assert(g.front() == "");
     assert(g.back() == "");
@@ -136,7 +136,7 @@ int main()
     // Checking template queue of doubles
     Queue<double> m;
     
-    // Array constructor
+    // Queue constructor
     cout << "\nTesting Queue::Queue\n";
     assert(m.front() == 0.0);
     assert(m.back() == 0.0);
@@ -193,7 +193,7 @@ int main()
     // Checking template queue of chars
     Queue<char> t;
     
-    // Array constructor
+    // Queue constructor
     cout << "\nTesting Queue::Queue\n";
     assert(t.front() == '\0');
     assert(t.back() == '\0');
