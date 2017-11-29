@@ -81,7 +81,7 @@ string checkResult(string one, string two, string oper) { // takes operator and 
         third = second * first;
     else {
         third = 0;
-        cout << "wrong operrator, results compromised" << endl;
+        cout << "wrong operator, results compromised" << endl;
     } // something went wrong
     string result = to_string(third);
     cout << "COMPUTED: " << result << endl;
