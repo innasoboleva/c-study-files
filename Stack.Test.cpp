@@ -18,10 +18,10 @@ using namespace std;
 int main()
 {
     cout << "\n---TEST INT STACK---\n";
-    // Checking template array of integers
+    // Checking template stack of integers
     Stack<int> a;
     
-    // Array constructor
+    // Stack constructor
     cout << "\nTesting Stack::Stack\n";
     assert(a.peek() == 0); // default value is 0
     
@@ -65,10 +65,10 @@ int main()
     
     
     cout << "\n---TEST STRING STACK---\n";
-    // Checking template array of strings
+    // Checking template stack of strings
     Stack<string> g;
     
-    // Array constructor
+    // Stack constructor
     cout << "\nTesting Stack::Stack\n";
     assert(g.peek() == "");
     
@@ -110,10 +110,10 @@ int main()
     const Stack<string> l; // if this compiles, Stack::Stack main constructor exists
     
     cout << "\n---TEST DOUBLE STACK---\n";
-    // Checking template array of doubles
+    // Checking template stack of doubles
     Stack<double> m;
     
-    // Array constructor
+    // Stack constructor
     cout << "\nTesting Stack::Stack\n";
     assert(m.peek() == 0.0);
     
@@ -155,10 +155,10 @@ int main()
     const Stack<double> s; // if this compiles, Stack::Stack main constructor exists
     
     cout << "\n---TEST CHAR STACK---\n";
-    // Checking template array of chars
+    // Checking template stack of chars
     Stack<char> t;
     
-    // Array constructor
+    // Stack constructor
     cout << "\nTesting Stack::Stack\n";
     assert(t.peek() == '\0');
     
