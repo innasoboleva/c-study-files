@@ -38,7 +38,7 @@ int main()
     b.pop();
     assert(b.peek() == 1);
     
-    a.pop(); // should nothing happen, a is empty
+    a.pop(); // nothing should happen, "a" is empty
     
     // object copy test
     cout << "\nObject copy test\n";
@@ -65,7 +65,7 @@ int main()
     
     
     cout << "\n---TEST STRING STACK---\n";
-    // Checking template array of integers
+    // Checking template array of strings
     Stack<string> g;
     
     // Array constructor
@@ -85,7 +85,7 @@ int main()
     h.pop();
     assert(h.peek() == "cars");
     
-    g.pop(); // should nothing happen, a is empty
+    g.pop(); // nothing should happen, "g" is empty
     
     // object copy test
     cout << "\nObject copy test\n";
@@ -102,7 +102,7 @@ int main()
     // object assignment test
     cout << "\nObject assignment test\n";
     Stack<string> k;
-    k = h; // "b" has 1 element
+    k = h; // "h" has 1 element
     assert(k.peek() == h.peek());
     
     // const object test
@@ -110,7 +110,7 @@ int main()
     const Stack<string> l; // if this compiles, Stack::Stack main constructor exists
     
     cout << "\n---TEST DOUBLE STACK---\n";
-    // Checking template array of integers
+    // Checking template array of doubles
     Stack<double> m;
     
     // Array constructor
@@ -130,11 +130,11 @@ int main()
     n.pop();
     assert(n.peek() == 1.11);
     
-    m.pop(); // should nothing happen, a is empty
+    m.pop(); // nothing should happen, "m" is empty
     
     // object copy test
     cout << "\nObject copy test\n";
-    Stack<double> o = n; // making a copy, "h" contains 1 element
+    Stack<double> o = n; // making a copy, "n" contains 1 element
     assert(o.peek() == n.peek());
     cout << "EXPECTED: 1.11 twice \n";
     cout << "ACTUAL: " << o.peek() << endl;
@@ -142,12 +142,12 @@ int main()
     
     // Stack::peek()
     Stack<double> p;
-    assert(p.peek() == 0.0); // should return String dummy value
+    assert(p.peek() == 0.0); // should return Double dummy value
     
     // object assignment test
     cout << "\nObject assignment test\n";
     Stack<double> r;
-    r = n; // "b" has 1 element
+    r = n; // "n" has 1 element
     assert(r.peek() == n.peek());
     
     // const object test
@@ -155,7 +155,7 @@ int main()
     const Stack<double> s; // if this compiles, Stack::Stack main constructor exists
     
     cout << "\n---TEST CHAR STACK---\n";
-    // Checking template array of integers
+    // Checking template array of chars
     Stack<char> t;
     
     // Array constructor
@@ -175,11 +175,11 @@ int main()
     u.pop();
     assert(u.peek() == 'a');
     
-    t.pop(); // should nothing happen, a is empty
+    t.pop(); // nothing should happen, "t" is empty
     
     // object copy test
     cout << "\nObject copy test\n";
-    Stack<char> v = u; // making a copy, "h" contains 1 element
+    Stack<char> v = u; // making a copy, "u" contains 1 element
     assert(v.peek() == u.peek());
     cout << "EXPECTED: a twice \n";
     cout << "ACTUAL: " << v.peek() << endl;
@@ -187,12 +187,12 @@ int main()
     
     // Stack::peek()
     Stack<char> w;
-    assert(w.peek() == 0.0); // should return String dummy value
+    assert(w.peek() == 0.0); // should return Char dummy value
     
     // object assignment test
     cout << "\nObject assignment test\n";
     Stack<char> x;
-    x = u; // "b" has 1 element
+    x = u; // "u" has 1 element
     assert(x.peek() == u.peek());
     
     // const object test
