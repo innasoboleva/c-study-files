@@ -10,7 +10,7 @@
 #define Queue_h
 
 template <typename V>
-class Queue             // implementing LIFO method
+class Queue             // implementing FIFO method
 {
     struct Node
     {
