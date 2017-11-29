@@ -67,7 +67,7 @@ int main()
     assert(c[-1] == c[-1]); // tests the getter's range checking
     
     cout << "---TEST DOUBLE ARRAY---\n";
-    // Checking template array of integers
+    // Checking template array of doubles
     StaticArray<double, 100> n;
     // Capacity
     cout << "\nTesting StaticArray::capacity\n";
