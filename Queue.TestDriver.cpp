@@ -17,8 +17,8 @@ using namespace std;
 
 int main()
 {
-    cout << "\n---TEST INT STACK---\n";
-    // Checking template array of integers
+    cout << "\n---TEST INT QUEUE---\n";
+    // Checking template queue of integers
     Queue<int> a;
     
     // Array constructor
@@ -43,7 +43,7 @@ int main()
     b.pop();
     assert(b.front() == 3);
     
-    a.pop(); // should nothing happen, a is empty
+    a.pop(); // nothing should happen, "a" is empty
     assert(a.front() == 0);
     assert(a.back() == 0);
     
@@ -76,8 +76,8 @@ int main()
     const Queue<int> f; // if this compiles, Queue::Queue main constructor exists
     
     
-    cout << "\n---TEST STRING STACK---\n";
-    // Checking template array of integers
+    cout << "\n---TEST STRING QUEUE---\n";
+    // Checking template queue of strings
     Queue<string> g;
     
     // Array constructor
@@ -101,7 +101,7 @@ int main()
     assert(h.front() == "cartoon");
     assert(h.back() == "cartoon");
     
-    g.pop(); // should nothing happen, a is empty
+    g.pop(); // nothing should happen, "g" is empty
     assert(g.front() == "");
     assert(g.back() == "");
     
@@ -124,7 +124,7 @@ int main()
     // object assignment test
     cout << "\nObject assignment test\n";
     Queue<string> k;
-    k = h; // "b" has 1 element
+    k = h; // "h" has 1 element
     assert(k.front() == h.front());
     assert(k.back() == h.back());
     
@@ -132,8 +132,8 @@ int main()
     cout << "\nConst object test\n";
     const Queue<string> l; // if this compiles, Queue::Queue main constructor exists
     
-    cout << "\n---TEST DOUBLE STACK---\n";
-    // Checking template array of integers
+    cout << "\n---TEST DOUBLE QUEUE---\n";
+    // Checking template queue of doubles
     Queue<double> m;
     
     // Array constructor
@@ -157,13 +157,13 @@ int main()
     assert(n.front() == 3.13);
     assert(n.back() == 3.13);
     
-    m.pop(); // should nothing happen, a is empty
+    m.pop(); // nothing should happen, "m" is empty
     assert(m.front() == 0.0);
     assert(m.back() == 0.0);
     
     // object copy test
     cout << "\nObject copy test\n";
-    Queue<double> o = n; // making a copy, "h" contains 1 element
+    Queue<double> o = n; // making a copy, "n" contains 1 element
     assert(o.front() == n.front());
     assert(o.back() == n.back());
     cout << "EXPECTED: 3.13 twice \n";
@@ -175,13 +175,13 @@ int main()
     
     // Queue::front() and Queue::back()
     Queue<double> p;
-    assert(p.front() == 0.0); // should return String dummy value
+    assert(p.front() == 0.0); // should return Double dummy value
     assert(p.back() == 0.0);
     
     // object assignment test
     cout << "\nObject assignment test\n";
     Queue<double> r;
-    r = n; // "b" has 1 element
+    r = n; // "n" has 1 element
     assert(r.front() == n.front());
     assert(r.back() == n.back());
     
@@ -189,12 +189,12 @@ int main()
     cout << "\nConst object test\n";
     const Queue<double> s; // if this compiles, Queue::Queue main constructor exists
     
-    cout << "\n---TEST CHAR STACK---\n";
-    // Checking template array of integers
+    cout << "\n---TEST CHAR QUEUE---\n";
+    // Checking template queue of chars
     Queue<char> t;
     
     // Array constructor
-    cout << "\nTesting Stack::Stack\n";
+    cout << "\nTesting Queue::Queue\n";
     assert(t.front() == '\0');
     assert(t.back() == '\0');
     
@@ -214,12 +214,12 @@ int main()
     assert(u.front() == 'c');
     assert(u.back() == 'c');
     
-    t.pop(); // should nothing happen, a is empty
+    t.pop(); // nothing should happen, "t" is empty
     assert(t.front() == t.back());
     
     // object copy test
     cout << "\nObject copy test\n";
-    Queue<char> v = u; // making a copy, "h" contains 1 element
+    Queue<char> v = u; // making a copy, "u" contains 1 element
     assert(v.front() == u.front());
     assert(v.back() == u.back());
     cout << "EXPECTED: c twice \n";
@@ -231,13 +231,13 @@ int main()
     
     // Queue::front() and Queue::back()
     Queue<char> w;
-    assert(w.front() == 0.0); // should return String dummy value
+    assert(w.front() == 0.0); // should return Char dummy value
     assert(w.back() == 0.0);
     
     // object assignment test
     cout << "\nObject assignment test\n";
     Queue<char> x;
-    x = u; // "b" has 1 element
+    x = u; // "u" has 1 element
     assert(x.front() == u.front());
     assert(x.back() == u.back());
     
